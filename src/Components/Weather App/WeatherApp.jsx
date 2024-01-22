@@ -12,7 +12,7 @@ import humidity_icon from "../Assets/humidity.png"
 
 export const WeatherApp = () => {
 
-    let api_key ="88bd79b9871ec15a3fc59c855644a845";
+    let api_key ="dd94f859a0e52d6e4767fddf735f04a7";
 
     const[wicon,setWicon]=useState(cloud_icon);
 
@@ -73,7 +73,7 @@ export const WeatherApp = () => {
         <div className='container' key={datarray.id}>
         <div className='top-bar'>
             <input type="text" className="cityInput" placeholder="Enter City" onChange={event=>setcity(event.target.value)}/>
-            <div className="search-icon" onClick={search}>
+            <div className="search-icon" onClick={search}> 
                 <img src={search_icon} alt="" />
             </div>
         </div>
